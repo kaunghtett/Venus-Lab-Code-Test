@@ -1,7 +1,7 @@
 <?php
 
-$string1 = 'W5RW5RW2RW1R';
-
+echo "How do you want to a robot walk?";
+$input = rtrim(fgets(STDIN));
 
  function walk(string $string) {
    $x = 0;
@@ -35,15 +35,17 @@ $string1 = 'W5RW5RW2RW1R';
       }
    }
    
-   $final = robotResult($x,$y,$direction);
-   var_dump($final);
+   $final = robotResult($direction);
+   echo "X = " . $x ."\n"; 
+   echo "Y = " . $y ."\n";
+   echo "Direction =" . $final;  
    
  } 
 
 
- function robotResult($x,$y,$direction):array {
-    echo $direction;
-   $finalarray = [];
+ function robotResult($direction) {
+  
+   
    $checkdirection = checkDirection($direction);
    if($checkdirection == "0") {
       $direction = "North";
@@ -54,9 +56,9 @@ $string1 = 'W5RW5RW2RW1R';
    }else {
       $direction = "West";
    }
-   array_push($finalarray,["X" => $x, "Y" => $y, "Direction" => $direction]);
+   return $direction;
 
-   return $finalarray;
+   
 }
 
 
@@ -92,7 +94,7 @@ $string1 = 'W5RW5RW2RW1R';
 
  }
 
- echo walk($string1);
+ echo walk($input);
 
 ?>
 
