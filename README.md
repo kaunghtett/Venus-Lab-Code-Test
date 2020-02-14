@@ -4,5 +4,5 @@
 ```
 php robot.php
 ```
-## promot box will appear and then fill your data [example: W4RRLW5RR]
+## promt box will appear and then fill your data [example: W4RRLW5RR]
 
