@@ -1,4 +1,6 @@
 # Venus-Lab-Code-Test
-#if u want to run robot.php just write this command
-###php robot.php
+# Robot
+## run this script
+```php robot.php
+## promot box will appear and then fill your data [example: W4RRLW5RR]
 
