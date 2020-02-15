@@ -67,7 +67,7 @@ $input = rtrim(fgets(STDIN));
 
 
  function checkDirection($direction) {
-    if($direction == "360") {
+    if($direction == "360" || $direction == "-360") {
        $direction = 0;
        return $direction;
     }else {
