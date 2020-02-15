@@ -11,11 +11,14 @@ $input = rtrim(fgets(STDIN));
    $upper_case_string = strtoupper($string);
    $str_array = string_split($upper_case_string);
 
+   var_dump($str_array);
+
    foreach($str_array as $str) {
       if($str == "R") {
          $checkdirection = checkDirection($direction);
          $direction = $checkdirection + 90;
       }elseif ($str == "L") {
+         $checkdirection = checkDirection($direction);
          $direction = $checkdirection - 90;
       }
       elseif(is_numeric($str)) {
